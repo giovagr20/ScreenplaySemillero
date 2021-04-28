@@ -19,14 +19,15 @@ public class OpenBrowserTask implements Task {
     public static Logger LOGGER = LogManager.getLogManager().getLogger(OpenBrowserTask.class.getName());
     @Override
     public <T extends Actor> void performAs(T actor) {
-        Properties prop = new Properties();
+        actor.attemptsTo(Open.url("http://practice.automationtesting.in/"));
+
+        /*Properties prop = new Properties();
         prop.getProperty("");
         try {
 
         } catch (ElementNotFoundException e) {
             LOGGER.info(ELEMENT_NOT_FOUND_ALERT);
-        }
-        actor.attemptsTo(Open.url("http://practice.automationtesting.in/"));
+        }*/
     }
 
     public static OpenBrowserTask openBrowser() {

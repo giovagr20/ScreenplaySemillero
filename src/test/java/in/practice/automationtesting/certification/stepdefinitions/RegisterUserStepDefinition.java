@@ -7,15 +7,17 @@ import cucumber.api.java.en.When;
 import in.practice.automationtesting.certification.tasks.OpenBrowserTask;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
+import net.serenitybdd.screenplay.actions.Open;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 import net.serenitybdd.screenplay.actors.Stage;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class RegisterUserStepDefinition {
 
-    @Managed(driver = "chrome")
+    @Managed
     private WebDriver webDriver;
     private Actor userAutomation = Actor.named("userAutomation");
 
