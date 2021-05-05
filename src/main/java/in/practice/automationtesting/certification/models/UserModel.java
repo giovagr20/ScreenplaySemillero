@@ -2,27 +2,30 @@ package in.practice.automationtesting.certification.models;
 
 public class UserModel {
 
-    private String _email;
-    private String _password;
+    private String _name;
+    private String _job;
 
-    public UserModel(String email, String password) {
-        _email = email;
-        _password = password;
+    public UserModel(String _name, String _job) {
+        this._name = _name;
+        this._job = _job;
     }
 
-    public String get_email() {
-        return _email;
+    public UserModel() {
     }
 
-    public void set_email(String _email) {
-        this._email = _email;
+    public String get_name() {
+        return _name;
     }
 
-    public String get_password() {
-        return _password;
+    public void set_name(String _name) {
+        this._name = _name;
     }
 
-    public void set_password(String _password) {
-        this._password = _password;
+    public String get_job() {
+        return _job;
+    }
+
+    public void set_job(String _job) {
+        this._job = _job;
     }
 }

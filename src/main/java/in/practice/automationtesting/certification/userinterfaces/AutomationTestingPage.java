@@ -7,6 +7,7 @@ import org.openqa.selenium.By;
 public class AutomationTestingPage {
 
     public static final Target SPN_TITLE_PAGE = Target.the("TITLE TEXT")
+            /*.locatedBy("")*/
             .located(By.id("site-logo"));
     //By spn = By.xpath("/*//");
     public static final Target SPN_TITLE_PAGE_WRONG = Target.the("TITLE TEXT WRONG")

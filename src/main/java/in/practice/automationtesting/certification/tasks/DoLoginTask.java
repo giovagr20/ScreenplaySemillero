@@ -21,6 +21,8 @@ public class DoLoginTask implements Task {
                 Enter.theValue(USER_PASSWORD.getValue()).into(INP_PASSWORD_LOGIN),
                 Click.on(BTN_LOGIN)
         );
+        /*actor.attemptsTo(Click.on(BTN_LOGIN));
+        actor.attemptsTo(Enter.theValue(jdjdjd));*/
     }
 
     public static Performable doLogin() {

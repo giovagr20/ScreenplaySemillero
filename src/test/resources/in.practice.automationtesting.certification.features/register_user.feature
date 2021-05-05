@@ -7,6 +7,6 @@
 
   @Case1
   Scenario: Register user successfully
-    Given the user opens navigator
+    Given the user "userAutomation" opens navigator
     When the user enters data for register user
     Then validate creation user

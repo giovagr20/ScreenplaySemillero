@@ -30,6 +30,7 @@ dependencies {
     implementation 'net.serenity-bdd:serenity-cucumber:1.9.45'
     implementation 'net.serenity-bdd:serenity-core:2.0.80'
     implementation 'org.slf4j:slf4j-simple:1.7.7'
+    implementation group: 'net.serenity-bdd', name: 'serenity-screenplay-rest', version: '2.0.80'
     implementation 'net.serenity-bdd:serenity-rest-assured:2.0.80'
     implementation 'org.json:json:20180813'
     testImplementation 'junit:junit:4.12'
@@ -42,7 +43,6 @@ dependencies {
     compile group: 'org.apache.poi', name: 'poi-ooxml', version: '3.17'
     implementation group: 'net.serenity-bdd', name: 'serenity-screenplay', version: '2.0.80'
     compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.13.3'
-
     compile fileTree(dir: 'lib', include: '*.jar')
 }
 

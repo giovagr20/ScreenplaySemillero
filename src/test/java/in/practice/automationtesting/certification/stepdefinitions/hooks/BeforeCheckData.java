@@ -1,5 +1,6 @@
 package in.practice.automationtesting.certification.stepdefinitions.hooks;
 
+import cucumber.api.Scenario;
 import cucumber.api.java.Before;
 import in.practice.automationtesting.certification.exceptions.InternetConnectionException;
 import in.practice.automationtesting.certification.utils.CheckInternetConnection;
@@ -22,11 +23,11 @@ public class BeforeCheckData {
     private WebDriver webDriver;
     private Actor userAutomation = Actor.named("userAutomation");
 
-    @Before
-    public void setUp() {
+    public void theAbilities(Scenario scenario) {
         try {
             OnStage.setTheStage(new OnlineCast());
-            userAutomation.can(BrowseTheWeb.with(webDriver));
+/*            OnStage.theActor(Actor.named("userAutomation").toString());
+            OnStage.theActorInTheSpotlight().can(BrowseTheWeb.with(webDriver));*/
             URL url = new URL(String.valueOf(URLBase.getValue()));
             CheckInternetConnection checkInternetConnection = new CheckInternetConnection(url);
             checkInternetConnection.checkConnection();
@@ -35,5 +36,7 @@ public class BeforeCheckData {
         }
 
     }
+
+
 
 }
